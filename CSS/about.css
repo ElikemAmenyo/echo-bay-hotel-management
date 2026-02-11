@@ -1,0 +1,152 @@
+
+/* Main Heading */
+h1{
+    color: #004d40;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #00796b;
+    padding-bottom: 5px;
+}
+
+.team h2{
+    color: #004d40;
+    margin-bottom: 10px;
+}
+#about-us h2{
+    color: #004d40;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+/* About Us Section */
+#about-us {
+    max-width: 900px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Team Section */
+.team {
+    max-width: 1100px;
+    margin: 0 auto 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+#team{
+    display: flex;
+    gap: 50px;
+}
+
+.team-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 350px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.team-box:hover {
+    transform: translateY(-10px);
+}
+
+.team-box img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #00796b;
+}
+
+.team-box h3 {
+    margin: 10px 0 5px 0;
+    color: #004d40;
+}
+
+.team-box p {
+    align-items: center;
+    text-align: center;
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.team-box button {
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.team-box button:hover {
+    background-color: black;
+    color: white;
+    transition: all 0.8s ease;
+}
+
+/* History Section */
+#history {
+    background-color: #e0f2f1;
+    padding: 40px 20px;
+    margin-bottom: 50px;
+}
+
+.history {
+    max-width: 900px;
+    margin: 0 auto;
+    color: #004d40;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ingrid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hotel-branches, .contact-info {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+}

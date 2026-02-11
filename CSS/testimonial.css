@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    
+   
+  }
+
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.main{
+    margin-top: 50px;
+  }
+  
+  .testimonials-container {
+    text-align: center;
+    background-color: transparent;
+    padding: 90px;
+    border-radius: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #333;
+    font-style: italic;
+    margin-bottom: 50px;
+  }
+  
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+  
+  .testimonial {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 10px;
+    width: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial:last-child{
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+  }
+  
+  .testimonial:nth-child(3){
+    grid-row-start: 1;
+    grid-column-end: span 2;
+  }
+  
+  .testimonial:nth-child(2){
+    grid-row-start: 2;
+    grid-row-end: span 2;
+  }
+
+  .testimonial:nth-child(4){
+    grid-column-end: span 2;
+  }
+
+
+  .review {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  .customer {
+    font-size: 0.9rem;
+    color: #d4af37;
+    font-style: italic;
+    margin-top: 10px;
+  }

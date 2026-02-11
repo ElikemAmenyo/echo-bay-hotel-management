@@ -1,0 +1,118 @@
+.offers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.offer-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.offer-card.expanded {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.offer-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: height 0.3s ease;
+}
+
+.offer-card.expanded .offer-image {
+    height: 250px;
+}
+
+.offer-details {
+    padding: 1.5rem;
+    position: relative;
+}
+
+.offer-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.offer-description {
+    color: #666;
+    margin-bottom: 1rem;
+    max-height: 60px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.offer-card.expanded .offer-description {
+    max-height: 200px;
+}
+
+.offer-price {
+    font-weight: bold;
+    color: #d4af37;
+    font-size: 1.2rem;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 0.5rem;
+}
+
+.discount-badge {
+    background: #d4af37;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-left: 0.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: #333;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s ease;
+}
+
+.favorite-btn.active {
+    color: red;
+}
+
+.favorite-btn:hover {
+    color: #d4af37;
+}
+
+.countdown {
+    font-size: 0.9rem;
+    color: #d4af37;
+    margin-top: 0.5rem;
+    font-weight: bold;
+}

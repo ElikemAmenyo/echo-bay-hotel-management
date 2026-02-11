@@ -1,0 +1,261 @@
+/* Contact Page Specific Styles */
+section:first-of-type {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 80px;
+}
+
+section:first-of-type h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #d4af37;
+}
+
+section:first-of-type p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Main Content Grid */
+.gridhalf {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+    align-items: start;
+}
+
+/* Contact Form Styling */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #d4af37;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container form div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container input,
+.container textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+    font-family: inherit;
+}
+
+.container input:focus,
+.container textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+}
+
+.container input::placeholder,
+.container textarea::placeholder {
+    color: #7f8c8d;
+}
+
+.container textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.container button {
+    padding: 15px 30px;
+    background-color: #d4af37;
+    color: #2c3e50;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.container button:hover {
+    background-color: #c19d2e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Success and Error Messages */
+.container p[style*="color: green"] {
+    background-color: #d4edda;
+    color: #155724 !important;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #c3e6cb;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.container p[style*="color: red"] {
+    background-color: #f8d7da;
+    color: #721c24 !important;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #f5c6cb;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+/* Map Section */
+.righthalf {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+}
+
+.righthalf iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+footer a {
+    color: #d4af37;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #c19d2e;
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .gridhalf {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    .righthalf iframe {
+        height: 400px;
+    }
+    
+    section:first-of-type h2 {
+        font-size: 2rem;
+    }
+    
+    .container h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section:first-of-type {
+        padding: 40px 15px;
+        margin-top: 70px;
+    }
+    
+    .gridhalf {
+        margin: 40px auto;
+        padding: 0 15px;
+    }
+    
+    .container {
+        padding: 30px 25px;
+    }
+    
+    .righthalf {
+        padding: 15px;
+    }
+    
+    .righthalf iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    section:first-of-type {
+        padding: 30px 10px;
+    }
+    
+    section:first-of-type h2 {
+        font-size: 1.8rem;
+    }
+    
+    section:first-of-type p {
+        font-size: 1rem;
+    }
+    
+    .gridhalf {
+        margin: 30px auto;
+        padding: 0 10px;
+        gap: 20px;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+    
+    .container h2 {
+        font-size: 1.6rem;
+    }
+    
+    .container input,
+    .container textarea {
+        padding: 12px;
+    }
+    
+    .container button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .righthalf iframe {
+        height: 300px;
+    }
+}
+
+/* Animation for form elements */
+.container input:focus,
+.container textarea:focus {
+    transform: translateY(-1px);
+}
+
+.container button:active {
+    transform: translateY(0);
+}

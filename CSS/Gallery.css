@@ -1,0 +1,153 @@
+
+section{
+    padding: 30px 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section .sec{
+    color: rgb(66, 66, 66);
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 20px;
+}
+
+.grid{
+    display: grid;
+    gap: 0.1rem;
+    grid-template-columns: 400px 400px 400px;
+    flex-flow: row wrap;
+    justify-content: center; 
+    height: auto; 
+    margin: 20px;
+}
+
+.grid .img-box{
+    display: grid;  
+    align-items: center;
+}
+.img-box img{
+    width: 400px;
+    height: 200px;
+}
+.img-box img:hover{
+    transform: scale(1.01);
+    transition: all 1s ease-in-out;
+}
+@media (max-width: 991px) {
+    .grid .center {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+}
+.logo{
+    width: 100px;
+    height: 100px;
+}
+#contact{
+    color: white;
+    background-color: rgb(135, 143, 133);
+}
+ section .ingrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.ingrid div a{
+    text-decoration: none;
+    color: white;
+}
+.menu{
+    display: flex;
+    color: gray;
+    justify-content: center;
+}
+.menu li{
+    float: left;
+}
+
+.event-section {
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+.event-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.event-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.event-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+.event-item:hover img {
+    transform: scale(1.05);
+}
+
+.event-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.event-item:hover .event-caption {
+    transform: translateY(0);
+}
+
+.event-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: springgreen;
+}
+
+@media (max-width: 768px) {
+    .event-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .event-item img {
+        height: 250px;
+    }
+}
+
+
+section div a img{
+    width: 35px;
+}
+section div a img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+section div ul li{
+    padding: 7px;
+    text-decoration: none;
+    list-style: none;
+}
+section div .profile{
+    width: 550px;
+    float: left;
+}
