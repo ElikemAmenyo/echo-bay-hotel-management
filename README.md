@@ -113,9 +113,6 @@ Online_Hotel_Booking/
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Support
-
-For support, email support@echobaylodge.com or use the contact form on the website.
 
 ## Acknowledgments
 
